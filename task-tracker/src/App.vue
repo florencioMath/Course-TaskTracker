@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header title="Task Tracker" />
-    <Tasks :tasks="tasks" />
+    <Tasks @delete-task="deleteTask" :tasks="tasks" />
   </div>
 </template>
 
@@ -16,6 +16,15 @@ export default {
     return {
       tasks: [],
     };
+  },
+  methods: {
+    deleteTask({ text, id }) {
+      if (confirm(`Você quer deletar a task: ${text}`)) {
+        this.tasks = this.tasks.filter((task) => {
+          return task.id !== id;
+        });
+      }
+    },
   },
   created() {
     this.tasks = [
