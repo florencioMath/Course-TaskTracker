@@ -1,5 +1,5 @@
 <template>
-  <div class="task">
+  <div :class="[task.reminder ? 'reminder' : '', 'task']">
     <h3>
       {{ task.text }}
       <i class="fas fa-times"></i>
@@ -30,6 +30,7 @@ export default {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  border-left: 5px solid transparent;
 }
 .task.reminder {
   border-left: 5px solid green;
