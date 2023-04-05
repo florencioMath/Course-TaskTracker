@@ -19,20 +19,20 @@ export default {
     this.tasks = [
       {
         id: 1,
-        text: 'Doctors Appointment',
-        day: 'March 5th at 2:30pm',
+        text: 'Consulta médica',
+        day: '14 de Abril às 14:30',
         reminder: true,
       },
       {
         id: 2,
-        text: 'Meeting with boss',
-        day: 'March 6th at 1:30pm',
+        text: 'Daily',
+        day: '10 de Abril às 09:30',
         reminder: true,
       },
       {
         id: 3,
-        text: 'Food shopping',
-        day: 'March 7th at 2:00pm',
+        text: 'Comprar comida',
+        day: '11 de Abril às 19:00',
         reminder: false,
       },
     ];
