@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     onClick() {
-      console.log('Clicou em Add Task!');
+      this.$emit('btn-click');
     },
   },
 };
