@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>Copyright &copy;{{ year }}</p>
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">Sobre</router-link>
   </footer>
 </template>
 
