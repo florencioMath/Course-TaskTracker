@@ -3,8 +3,8 @@
 </div>
 
 <p align="center">
-Aplicarivo de tarefas criado para iniciar os estudos com VueJS.. <br/>
-Foi seguido o courso do <a href="https://www.youtube.com/@TraversyMedia">Traversy Media</a> no YouTube. <br/>
+Aplicativo de tarefas criado para iniciar os estudos com VueJS <br/>
+Foi seguido o curso do <a href="https://www.youtube.com/@TraversyMedia">Traversy Media</a> no YouTube. <br/>
 <a href="https://www.youtube.com/watch?v=qZXt1Aom3Cs&ab_channel=TraversyMedia">Assista ao vídeo clicando aqui.</a>
 </p>
 
@@ -39,9 +39,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Task Tracker foi desenvolvido como um estudo inicial do framework VUeJS. <br />
-O objetivo do app é ser um aplicativo de tarefas simples, clicando em Add Task é aberto um formulário com dois campos que recebem a Task que deve ser feta em conjunto com a Data em forma de string, e contém um chekbox para um reminder o qual adicionará uma borda verde ao lado da Task. <br />
-Clicando duas vezes sobre uma task o reminder é adicionado ou removido, e clicando no X no canto superior direito da task a mesma é excluída, porém,  antes é exibido um aviso confirmando a ação.
+O Task Tracker foi desenvolvido como um estudo inicial do framework VueJS. <br />
+O objetivo do app é ser um aplicativo de tarefas simples, clicando em Add Task é aberto um formulário com dois campos que recebem a Task que deve ser feta em conjunto com a Data em forma de string, e contém um chekbox para um reminder o qual adicionará uma borda verde ao lado esquerdo da Task. <br />
+Clicando duas vezes sobre uma task o reminder é adicionado ou removido, e clicando no X no canto superior direito da task a mesma é excluída, porém, antes é exibido um aviso confirmando a ação. <br />
 Esse é meu primeiro projeto com VueJS.
 
 - [Acesse o deploy do projeto, na Vercel](https://florenciomath-tasktracker.vercel.app/)
