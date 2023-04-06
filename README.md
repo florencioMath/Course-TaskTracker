@@ -34,6 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - VueJS
 - Vite
 - Vite Router
+- Local Storage
 - Figma
 - Vercel
 
@@ -41,7 +42,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Task Tracker foi desenvolvido como um estudo inicial do framework VueJS. <br />
 O objetivo do app é ser um aplicativo de tarefas simples, clicando em Add Task é aberto um formulário com dois campos que recebem a Task que deve ser feta em conjunto com a Data em forma de string, e contém um chekbox para um reminder o qual adicionará uma borda verde ao lado esquerdo da Task. <br />
-Clicando duas vezes sobre uma task o reminder é adicionado ou removido, e clicando no X no canto superior direito da task a mesma é excluída, porém, antes é exibido um aviso confirmando a ação. <br />
+Clicando duas vezes sobre uma task o reminder é adicionado ou removido, e clicando no X no canto superior direito da task a mesma é excluída, porém, antes é exibido um aviso confirmando a ação. Todas as Tasks ficam salvas no Local Storage. <br />
 Esse é meu primeiro projeto com VueJS.
 
 - [Acesse o deploy do projeto, na Vercel](https://florenciomath-tasktracker.vercel.app/)
