@@ -19,7 +19,26 @@ export default {
   },
   data() {
     return {
-      tasks: [],
+      tasks: [
+        {
+          id: 1,
+          text: 'Consulta médica',
+          day: '14 de Abril às 14:30',
+          reminder: true,
+        },
+        {
+          id: 2,
+          text: 'Daily',
+          day: '10 de Abril às 09:30',
+          reminder: true,
+        },
+        {
+          id: 3,
+          text: 'Comprar comida',
+          day: '11 de Abril às 19:00',
+          reminder: false,
+        },
+      ],
     };
   },
   methods: {
@@ -39,27 +58,23 @@ export default {
       );
     },
   },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: 'Consulta médica',
-        day: '14 de Abril às 14:30',
-        reminder: true,
+  watch: {
+    tasks: {
+      handler() {
+        localStorage.setItem(
+          'florencioMath|taskTracker',
+          JSON.stringify(this.tasks)
+        );
       },
-      {
-        id: 2,
-        text: 'Daily',
-        day: '10 de Abril às 09:30',
-        reminder: true,
-      },
-      {
-        id: 3,
-        text: 'Comprar comida',
-        day: '11 de Abril às 19:00',
-        reminder: false,
-      },
-    ];
+      deep: true,
+    },
+  },
+  mounted() {
+    if (localStorage.getItem('florencioMath|taskTracker')) {
+      this.tasks = JSON.parse(
+        localStorage.getItem('florencioMath|taskTracker')
+      );
+    }
   },
 };
 </script>
